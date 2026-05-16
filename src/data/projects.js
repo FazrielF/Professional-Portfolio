@@ -22,7 +22,7 @@ export const projects = [
     id: 3,
     title: "Ghibli Studio",
     description:
-      "Flutter mobile app for tracking daily health metrics, water intake, and workout progress with charts.",
+      "React project using Ghibli Studio API",
     tech: ["React", "Tailwind", "Flowbite", "Etc"],
     link: "https://github.com/FazrielF",
     image: "/project/Ghibli-Studio.png",
