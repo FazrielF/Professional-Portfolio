@@ -7,7 +7,7 @@ export const projects = [
       "A full-featured online ticket booking platform with cart, payment integration, and admin dashboard built with Laravel.",
     tech: ["Laravel", "Tailwind", "Etc"],
     link: "https://github.com/FazrielF/TixID",
-    image: "public/project/TixID.png",
+    image: "/project/TixID.png",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ export const projects = [
       "Mini project an E-Commerce website.",
     tech: ["React", "Tailwind", "Flowbite", "Etc"],
     link: "https://github.com/FazrielF/Fake-Store",
-    image: "public/project/Fake-Store.png",
+    image: "/project/Fake-Store.png",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ export const projects = [
       "Flutter mobile app for tracking daily health metrics, water intake, and workout progress with charts.",
     tech: ["React", "Tailwind", "Flowbite", "Etc"],
     link: "https://github.com/FazrielF",
-    image: "public/project/Ghibli-Studio.png",
+    image: "/project/Ghibli-Studio.png",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ export const projects = [
       "My first mini project using Touch Designer.",
     tech: ["Touch Designer", "Etc"],
     link: "https://github.com/FazrielF",
-    image: "public/project/Reactive-Liquid.png",
+    image: "/project/Reactive-Liquid.png",
   },
   {
     id: 5,
@@ -43,6 +43,6 @@ export const projects = [
       "My second mini project using Touch Designer.",
     tech: ["Touch Designer", "Etc"],
     link: "https://github.com/fazriel",
-    image: "public/project/Magnetic-Particle.png",
+    image: "/project/Magnetic-Particle.png",
   },
 ];

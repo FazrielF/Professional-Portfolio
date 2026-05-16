@@ -99,7 +99,7 @@ export default function Navbar() {
               ))}
               <li className="pt-2">
                 <a
-                  href="public/resume-fazriel.pdf"
+                  href="/resume-fazriel.pdf"
                   download
                   className="neo-btn neo-btn-primary text-xs w-full justify-center"
                 >

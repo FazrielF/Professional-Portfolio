@@ -3,19 +3,19 @@
 export const certifications = [
   {
     id: 1,
-    image: "public/sertifikat/sertifikat-Gemini.jpg",
+    image: "/sertifikat/sertifikat-Gemini.jpg",
   },
   {
     id: 2,
-    image: "public/sertifikat/sertifikat-Javascript.jpg",
+    image: "/sertifikat/sertifikat-Javascript.jpg",
   },
   {
     id: 3,
-    image: "public/sertifikat/sertifikat-Web.jpg",
+    image: "/sertifikat/sertifikat-Web.jpg",
   },
   {
     id: 4,
-    image: "public/sertifikat/sertifikat-K3.jpg",
+    image: "/sertifikat/sertifikat-K3.jpg",
   },
   {
     id: 5,

@@ -33,7 +33,7 @@ export default function Footer() {
             <p className="text-light/70 text-sm leading-relaxed max-w-xs">
               Fullstack Developer building clean, performant digital experiences.
             </p>
-            <a href="public/resume-fazriel.pdf" download className="mt-5 neo-btn neo-btn-primary text-xs inline-flex">
+            <a href="/resume-fazriel.pdf" download className="mt-5 neo-btn neo-btn-primary text-xs inline-flex">
               <HiDownload size={14} /> Download Resume
             </a>
           </div>
