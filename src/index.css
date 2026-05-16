@@ -1,0 +1,424 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ═══════════════════════════════════════════════════════════════
+   NEOBRUTALISM BASE
+   ═══════════════════════════════════════════════════════════════ */
+html {
+  scroll-behavior: smooth;
+  background-color: #ECD5BC;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  background-color: #ECD5BC;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ─── Scrollbar ───────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #ECD5BC;
+}
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border: 2px solid #ECD5BC;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C66E52;
+}
+
+/* ─── Selection ───────────────────────────────────────────── */
+::selection {
+  background: #C66E52;
+  color: #FFFFFF;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   NEOBRUTALISM CARD SYSTEM
+   ═══════════════════════════════════════════════════════════════ */
+.neo-card {
+  background: #FFFFFF;
+  border: 3px solid #000000;
+  box-shadow: 4px 4px 0px 0px #000000;
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.neo-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px #000000;
+}
+
+.neo-card-sm {
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  box-shadow: 3px 3px 0px 0px #000000;
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.neo-card-sm:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+
+.neo-card-flat {
+  background: #FFFFFF;
+  border: 3px solid #000000;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   NEOBRUTALISM BUTTONS
+   ═══════════════════════════════════════════════════════════════ */
+.neo-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1.5rem;
+  border: 3px solid #000000;
+  box-shadow: 4px 4px 0px 0px #000000;
+  transition: all 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+}
+.neo-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px #000000;
+}
+.neo-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px 0px #000000;
+}
+.neo-btn-primary {
+  background: #C66E52;
+  color: #FFFFFF;
+}
+.neo-btn-secondary {
+  background: #FFFFFF;
+  color: #000000;
+}
+.neo-btn-dark {
+  background: #000000;
+  color: #FFFFFF;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SECTION LABELS
+   ═══════════════════════════════════════════════════════════════ */
+.section-label {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #C66E52;
+  border: 2px solid #000000;
+  padding: 0.25rem 0.75rem;
+  display: inline-block;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   MARQUEE / SKILL CARDS
+   ═══════════════════════════════════════════════════════════════ */
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-marquee-left {
+  animation: marquee-left linear infinite;
+}
+.animate-marquee-right {
+  animation: marquee-right linear infinite;
+}
+
+.marquee-wrapper:hover .animate-marquee-left,
+.marquee-wrapper:hover .animate-marquee-right {
+  animation-play-state: paused;
+}
+
+.marquee-card {
+  background: #FFFFFF;
+  border: 3px solid #000000;
+  box-shadow: 3px 3px 0px 0px #000000;
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.marquee-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px 0px #000000;
+  background: #FFFFFF;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   TIMELINE
+   ═══════════════════════════════════════════════════════════════ */
+.timeline-line {
+  background: #000000;
+  width: 3px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   LINK ANIMATION
+   ═══════════════════════════════════════════════════════════════ */
+.animated-link {
+  position: relative;
+  font-weight: 600;
+}
+.animated-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #C66E52;
+  transition: width 0.3s ease;
+}
+.animated-link:hover::after {
+  width: 100%;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CAROUSEL (horizontal scroll)
+   ═══════════════════════════════════════════════════════════════ */
+.carousel-track {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
+  scrollbar-width: none;
+}
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+.carousel-card {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   LOADING SCREEN
+   ═══════════════════════════════════════════════════════════════ */
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ECD5BC;
+}
+
+.loading-letter-container {
+  position: relative;
+  width: 120px;
+  height: 160px;
+}
+
+.loading-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.loading-letter-stroke {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 120px;
+  font-weight: 800;
+  fill: none;
+  stroke: #000000;
+  stroke-width: 2;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+}
+
+.loading-svg.drawing .loading-letter-stroke {
+  animation: stroke-draw 1s ease-out forwards;
+}
+.loading-svg.drawn .loading-letter-stroke {
+  stroke-dashoffset: 0;
+}
+
+.loading-letter-fill {
+  position: absolute;
+  inset: 0;
+  clip-path: inset(100% 0 0 0);
+  transition: clip-path 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+}
+.loading-letter-fill.reveal {
+  clip-path: inset(0 0 0 0);
+}
+
+.loading-letter-solid {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 120px;
+  font-weight: 800;
+  fill: #C66E52;
+}
+
+.loading-bar-track {
+  position: absolute;
+  bottom: 40px;
+  width: 80px;
+  height: 6px;
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  overflow: hidden;
+}
+
+.loading-bar-fill {
+  width: 100%;
+  height: 100%;
+  background: #C66E52;
+  transform-origin: left;
+}
+
+@keyframes stroke-draw {
+  0% { stroke-dashoffset: 500; }
+  100% { stroke-dashoffset: 0; }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   TERMINAL CARD (HERO)
+   ═══════════════════════════════════════════════════════════════ */
+.terminal-card {
+  background: #FFFFFF;
+  border: 3px solid #000000;
+  box-shadow: 6px 6px 0px 0px #000000;
+}
+
+.terminal-cursor {
+  color: #C66E52;
+  animation: blink-cursor 1s step-end infinite;
+}
+.terminal-blink {
+  color: #C66E52;
+  animation: blink-cursor 1s step-end infinite;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CERTIFICATE IMAGE GRID
+   ═══════════════════════════════════════════════════════════════ */
+.cert-image-card {
+  position: relative;
+  overflow: hidden;
+  background: #FFFFFF;
+  border: 3px solid #000000;
+  box-shadow: 4px 4px 0px 0px #000000;
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+}
+.cert-image-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px #000000;
+}
+.cert-image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.cert-image-card:hover img {
+  transform: scale(1.03);
+}
+.cert-image-card .cert-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.cert-image-card:hover .cert-overlay {
+  opacity: 1;
+}
+
+.cert-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  aspect-ratio: 4 / 3;
+  background: #ECD5BC;
+  color: #758A93;
+}
+.cert-placeholder svg {
+  opacity: 0.5;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   FORM INPUTS
+   ═══════════════════════════════════════════════════════════════ */
+.neo-input {
+  width: 100%;
+  background: #FFFFFF;
+  border: 3px solid #000000;
+  padding: 0.75rem 1rem;
+  font-family: "Sora", sans-serif;
+  font-size: 0.875rem;
+  color: #000000;
+  outline: none;
+  transition: all 0.2s ease;
+}
+.neo-input::placeholder {
+  color: #758A93;
+}
+.neo-input:focus {
+  box-shadow: 4px 4px 0px 0px #C66E52;
+  transform: translate(-2px, -2px);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   GEOMETRIC DECORATIONS
+   ═══════════════════════════════════════════════════════════════ */
+.geo-circle {
+  width: 80px;
+  height: 80px;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  background: #C66E52;
+  position: absolute;
+}
+.geo-cross {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.geo-cross::before,
+.geo-cross::after {
+  content: "";
+  position: absolute;
+  background: #000000;
+}
+.geo-cross::before {
+  width: 100%;
+  height: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.geo-cross::after {
+  width: 3px;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
