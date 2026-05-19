@@ -217,7 +217,7 @@ export default function Hero() {
               </button>
 
               <a
-                href="/resume-fazriel.pdf"
+                href="/CV.pdf"
                 download
                 className="neo-btn neo-btn-secondary"
               >
