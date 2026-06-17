@@ -15,7 +15,7 @@ export const projects = [
     description:
       "A fake App Store website built to replicate a mobile application marketplace, featuring app browsing, filtering, and a clean user interface.",
     tech: ["React", "Tailwind", "Flowbite", "Etc"],
-    link: "https://github.com/FazrielF/FE-Pengaduan",
+    link: "https://github.com/FazrielF/Fake-Store",
     image: "/project/Fake-Store.png",
   },
   {
@@ -24,7 +24,7 @@ export const projects = [
     description:
       "A Public Complaints Website built with React and Express.js, designed to make it easier for citizens to report local issues..",
     tech: ["React", "Tailwind", "Javascript", "Etc"],
-    link: "https://github.com/FazrielF",
+    link: "https://github.com/FazrielF/FE-Pengaduan",
     image: "/project/Pengaduan-Masyarakat.png",
   },
   {
