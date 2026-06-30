@@ -25,7 +25,7 @@ export default function About() {
 
             {/* Image */}
             <img
-              src="/Fazriel.jpg"
+              src="/Fazriel.jpeg"
               alt="Profile"
               className="w-full h-[420px] object-cover border-2 border-dark"
             />
